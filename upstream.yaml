@@ -1,0 +1,21 @@
+schema_version: "vyges-upstream-v1"
+upstream:
+  type: "standalone"
+  repo: https://github.com/pulp-platform/common_cells
+  branch: master
+  commit: 63e1b679a70eca3a1d60d686bc1fa170ec08e1ab
+  extracted_at: "2026-06-24T05:08:54Z"
+import:
+  rtl:
+    - path: "src"
+      map_to: "rtl"
+    - path: "include"
+      map_to: "include"
+  license:
+    - path: "LICENSE"
+  readme:
+    - path: "README.md"
+license:
+  spdx: SHL-0.51
+  file: LICENSE
+metadata_locked: true
