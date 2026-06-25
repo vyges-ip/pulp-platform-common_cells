@@ -1,0 +1,11 @@
+`verilator_config
+// Vyges lint waiver (vyges-additions) — pulp-platform-common_cells
+//
+// id_queue.sv: `empty` is a 1-bit reduction (`assign empty = &linked_data_free;`)
+// later read into the `empty_o` port, but it is never declared, so Verilator
+// creates it implicitly and emits IMPLICIT. The net is functionally correct
+// (1-bit); this is a lint-style omission in upstream. Reported upstream as a
+// question (declare-explicitly?). Waive IMPLICIT for this file until upstream
+// resolves; do NOT broaden the scope. Travels with the IP so any consumer's
+// lint flow stays clean.
+lint_off -rule IMPLICIT -file "*id_queue.sv"
