@@ -8,4 +8,5 @@
 // question (declare-explicitly?). Waive IMPLICIT for this file until upstream
 // resolves; do NOT broaden the scope. Travels with the IP so any consumer's
 // lint flow stays clean.
+// Upstream issue: https://github.com/pulp-platform/common_cells/issues/323
 lint_off -rule IMPLICIT -file "*id_queue.sv"
