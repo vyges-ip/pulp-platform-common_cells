@@ -3,7 +3,7 @@ upstream:
   type: "standalone"
   repo: https://github.com/pulp-platform/common_cells
   branch: master
-  commit: db42769334b4589b4b3fc671b34513bdb98be565
+  commit: a257b714450bff120f52a85cf912dc778a5bb988
   extracted_at: "2026-06-24T05:08:54Z"
 import:
   rtl:
